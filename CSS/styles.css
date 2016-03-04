@@ -1,0 +1,139 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  height: 100%;
+  margin: 0;
+  }
+
+.wrapper {
+  /*display: flex;*/
+  max-width: 1750px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.navbar li {
+  display: none;
+}
+
+.navbar img {
+  height: 60px;
+  width: auto;
+  border: 2px solid pink;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.menu2 {
+  display: none;
+}
+
+.cover { /*background: url("https://static.pexels.com/photos/29564/pexels-photo.jpg");*/
+border: 2px solid orange;
+height: 20%;
+width: 100%;
+background-size: cover;
+background-repeat: no-repeat;
+/*color: white;*/
+}
+
+/*.navbar - need to collapse navbar starting with mobile first*/
+
+.welcome {
+  border: 2px solid purple;
+  margin: 40px;
+  text-align: center;
+}
+
+.welcome img {
+  width: 144px;
+  height: 84px;
+}
+
+.welcome h1 {
+font-size: 42px;
+margin: 0;
+}
+
+.gallery {
+  display: flex;
+}
+
+.row {
+ flex-wrap: wrap;
+}
+
+.gallery2, .gallery3, .gallery5, .gallery6 {
+  width: 50%;
+}
+
+.gallery1, .gallery4 {
+ width: 100%;
+}
+
+
+@media screen and (min-width:620px) {
+
+
+  .cover {
+    border: 2px solid green;
+     background: url("https://static.pexels.com/photos/29564/pexels-photo.jpg");
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .navbar ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 62%;
+    list-style-type: none;
+    height: 75px;
+  }
+
+  .navbar li {
+    display: block;
+    list-style-type: none;
+    flex: 1 1 100%;
+    border: 1px solid green;
+    text-align: center;
+  }
+
+  #image {
+    flex: 1;
+    font-size: 25px;
+    align-items: baseline;
+
+  }
+
+  .menu2 {
+      border: 2px solid orange;
+      height: 150px;
+      width: 100%;
+    }
+
+  .menu2 ul {
+    display: block;
+    list-style-type: none;
+    display: flex;
+    width: 45%;
+  }
+
+  .menu2 li {
+    flex: 1;
+  }
+
+}
