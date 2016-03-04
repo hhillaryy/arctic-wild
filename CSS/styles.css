@@ -24,7 +24,7 @@ html {
 .navbar img {
   height: 60px;
   width: auto;
-  border: 2px solid pink;
+  /*border: 2px solid pink;*/
   padding-left: 20px;
   padding-top: 10px;
 }
@@ -33,26 +33,26 @@ html {
   display: none;
 }
 
-.cover { /*background: url("https://static.pexels.com/photos/29564/pexels-photo.jpg");*/
-border: 2px solid orange;
-height: 20%;
+.cover {
+background: url("https://static.pexels.com/photos/29564/pexels-photo.jpg");
+/*border: 2px solid orange;*/
+height: 350px;
 width: 100%;
 background-size: cover;
 background-repeat: no-repeat;
-/*color: white;*/
+position: center;
+color: white;
 }
 
-/*.navbar - need to collapse navbar starting with mobile first*/
-
 .welcome {
-  border: 2px solid purple;
+  /*border: 2px solid purple;*/
   margin: 40px;
   text-align: center;
 }
 
 .welcome img {
-  width: 144px;
-  height: 84px;
+  width: 25%;
+  height: 25%;
 }
 
 .welcome h1 {
@@ -60,21 +60,103 @@ font-size: 42px;
 margin: 0;
 }
 
+.fake-button {
+  display: none;
+}
+
 .gallery {
-  display: flex;
+  background-color: #d9d9d9;
 }
 
 .row {
- flex-wrap: wrap;
+ display: flex;
+  flex-direction: column;
 }
 
-.gallery2, .gallery3, .gallery5, .gallery6 {
+.link {
+  height: 100px;
+  width: 100px;
+  background-color: #d9d9d9;
+  opacity: 0.7;
+  border-radius: 50%
+}
+
+.link a {
+    text-decoration: none;
+    /*color: white; */
+  }
+
+.gallery1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/rafting.jpg");
+  background-size: cover;
+  height: 300px;
+  margin: 15px;
+  margin-top: 20px;
+}
+
+.gallery2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/camp.jpeg");
+  background-size: cover;
+  height: 300px;
+  margin: 15px;
+}
+
+.gallery3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/backpacking.jpg");
+  background-size: cover;
+  height: 300px;
+  margin: 15px;
+}
+
+.gallery4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/canoeing.jpg");
+  background-size: cover;
+  height: 300px;
+  margin: 12px;
+}
+
+.gallery5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/photography.jpg");
+  background-size: cover;
+  height: 300px;
+  margin: 12px;
+}
+
+.gallery6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/custom.jpg");
+  background-size: cover;
+  height: 300px;
+  margin: 12px;
+}
+
+
+
+
+/*.gallery2, .gallery3, .gallery5, .gallery6 {
   width: 50%;
 }
 
 .gallery1, .gallery4 {
  width: 100%;
-}
+}*/
 
 
 @media screen and (min-width:620px) {
@@ -83,7 +165,7 @@ margin: 0;
   .cover {
     border: 2px solid green;
      background: url("https://static.pexels.com/photos/29564/pexels-photo.jpg");
-    height: 600px;
+    height: 550px;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -112,6 +194,20 @@ margin: 0;
     text-align: center;
   }
 
+.welcome {
+  margin: 25px;
+}
+
+  .welcome h1 {
+  font-size: 50px;
+  margin: 0;
+  }
+
+  .welcome img {
+    width: 140px;
+    height:140px;
+  }
+
   #image {
     flex: 1;
     font-size: 25px;
@@ -136,4 +232,31 @@ margin: 0;
     flex: 1;
   }
 
+}
+
+@media and screen (min-width: 850px) {
+
+  .wrapper {
+    /*display: flex;*/
+    max-width: 1750px;
+    height: 100vh;
+    margin: 0 auto;
+  }
+
+  .cover {
+    border: 2px solid green;
+     background: url("https://static.pexels.com/photos/29564/pexels-photo.jpg");
+    height: 1050px;
+    max-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+  }
+
+  .fake-button {
+    display: block;
+    text-align: center;
+    background-color: #DC7725;
+    padding: 10px 20px;
+  }
 }
