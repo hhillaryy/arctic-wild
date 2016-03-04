@@ -1,7 +1,6 @@
 # arctic-wild
 CSS week 4 code review (real repo)
 
-# BLOG TEMPLATE
 HTML, CSS, and Sass exercise for Epicodus 3.4.2016
 ### by Hillary Hintzen
 
