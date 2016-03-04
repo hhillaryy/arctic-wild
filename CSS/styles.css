@@ -21,6 +21,18 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+.cover {
+background: url("https://static.pexels.com/photos/29564/pexels-photo.jpg");
+/*border: 2px solid orange;*/
+height: 350px;
+width: 100%;
+background-size: cover;
+background-repeat: no-repeat;
+position: center;
+color: white;
+}
+
+
 .navbar li {
   display: none;
 }
@@ -40,17 +52,9 @@ body {
 #image {
   font-family: 'Noticia Text', serif;
 }
+/*
 
-.cover {
-background: url("https://static.pexels.com/photos/29564/pexels-photo.jpg");
-/*border: 2px solid orange;*/
-height: 350px;
-width: 100%;
-background-size: cover;
-background-repeat: no-repeat;
-position: center;
-color: white;
-}
+/Heading Text/*/
 
 .welcome {
   /*border: 2px solid purple;*/
@@ -73,6 +77,8 @@ margin: 0;
   display: none;
 }
 
+/*Gallery Images*/
+
 .gallery {
   background-color: #d9d9d9;
 }
@@ -82,24 +88,6 @@ margin: 0;
   flex-direction: column;
 }
 
-.link {
-  display: flex;
-  justify-content: center;
-  height: 110px;
-  width: 110px;
-  background-color: #8c8c8c;
-  opacity: 0.8;
-  border-radius: 50%;
-  transition: all 2s;
-}
-
-.link:hover {
-  transform: scale(1.3);}
-
-.link a {
-    text-decoration: none;
-    /*color: white; */
-  }
 
 .gallery1 {
   display: flex;
@@ -162,6 +150,29 @@ margin: 0;
   margin: 12px;
 }
 
+.link {
+  display: flex;
+  justify-content: center;
+  height: 110px;
+  width: 110px;
+  background-color: #8c8c8c;
+  opacity: 0.8;
+  border-radius: 50%;
+  transition: all 2s;
+}
+
+/*Icons over gallery images */
+
+.link:hover {
+  transform: scale(1.3);}
+
+.link a {
+    text-decoration: none;
+    /*color: white; */
+  }
+
+
+/*First break point*/
 
 @media screen and (min-width:650px) {
 
@@ -285,6 +296,9 @@ margin: 0;
 
 }
 
+/*
+Second Break Point*/
+
 @media and screen (min-width: 850px) {
 
   .navbar li {
@@ -298,24 +312,17 @@ margin: 0;
     margin: 0 auto;
   }
 
-  .cover {
-    /*border: 2px solid green;*/
-     background: url("https://static.pexels.com/photos/29564/pexels-photo.jpg");
-    height: 1050px;
-    max-width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-  }
+.cover {
+  height: 625px;
+}
 
-  .fake-button {
-    position: absolute;
-    top: 450px;
-    left: 55%;
-    display: block;
-    text-align: center;
-    background-color: #DC7725;
-    padding: 5px 25px;
-
+.fake-button {
+  position: absolute;
+  top: 450px;
+  left: 55%;
+  display: block;
+  text-align: center;
+  background-color: #DC7725;
+  padding: 5px 25px;
   }
 }
