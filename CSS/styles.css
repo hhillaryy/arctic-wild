@@ -24,7 +24,7 @@ body {
 .cover {
 background: url("https://static.pexels.com/photos/29564/pexels-photo.jpg");
 /*border: 2px solid orange;*/
-height: 350px;
+height: 400px;
 width: 100%;
 background-size: cover;
 background-repeat: no-repeat;
@@ -152,13 +152,14 @@ margin: 0;
 
 .link {
   display: flex;
+  align-items: center;
   justify-content: center;
   height: 110px;
   width: 110px;
   background-color: #8c8c8c;
   opacity: 0.8;
   border-radius: 50%;
-  transition: all 2s;
+  transition: all 2s .2s;
 }
 
 /*Icons over gallery images */
@@ -168,9 +169,17 @@ margin: 0;
 
 .link a {
     text-decoration: none;
+    align-items: center;
     /*color: white; */
   }
 
+/*Footer styles*/
+.footer {
+  height: 20px;
+  font-size: 10px;
+  text-align: center;
+  background-color: #d9d9d9;
+}
 
 /*First break point*/
 
