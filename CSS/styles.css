@@ -101,7 +101,7 @@ margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("../img/camp.jpeg");
+  background-image: url("../img/camping.jpeg");
   background-size: cover;
   height: 300px;
   margin: 15px;
@@ -150,19 +150,11 @@ margin: 0;
 
 
 
-/*.gallery2, .gallery3, .gallery5, .gallery6 {
-  width: 50%;
-}
-
-.gallery1, .gallery4 {
- width: 100%;
-}*/
-
-
 @media screen and (min-width:620px) {
 
 
   .cover {
+    position: relative;
     border: 2px solid green;
      background: url("https://static.pexels.com/photos/29564/pexels-photo.jpg");
     height: 550px;
@@ -174,7 +166,7 @@ margin: 0;
 
   .navbar {
     display: flex;
-    justify-content: flex-end;
+    justify-content: baseline;
   }
 
   .navbar ul {
@@ -190,7 +182,6 @@ margin: 0;
     display: block;
     list-style-type: none;
     flex: 1 1 100%;
-    border: 1px solid green;
     text-align: center;
   }
 
@@ -215,14 +206,27 @@ margin: 0;
 
   }
 
+  .fake-button {
+    position: absolute;
+    top: 400px;
+    left: 40%;
+    display: block;
+    text-align: center;
+    background-color: #DC7725;
+    padding: 10px 20px;
+  }
+
   .menu2 {
-      border: 2px solid orange;
-      height: 150px;
+      display: block;
+      border: 2px solid #DC7725;
+      height: 100px;
       width: 100%;
+      color: white;
+      background-color: #737373;
     }
 
   .menu2 ul {
-    display: block;
+    display: flex;
     list-style-type: none;
     display: flex;
     width: 45%;
@@ -230,6 +234,26 @@ margin: 0;
 
   .menu2 li {
     flex: 1;
+    flex-grow: 1;
+  }
+
+  .row {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+  .gallery {
+    margin: 0 auto;
+}
+
+  .gallery2, .gallery3, .gallery5, .gallery4 {
+    flex: 1;
+    margin: 0 auto;
+  }
+
+  .gallery1,
+  .gallery6 {
+   flex: 2;
+    margin: 0 auto;
   }
 
 }
@@ -254,9 +278,13 @@ margin: 0;
   }
 
   .fake-button {
+    position: absolute;
+    top: 450px;
+    left: 50%;
     display: block;
     text-align: center;
     background-color: #DC7725;
     padding: 10px 20px;
+
   }
 }
